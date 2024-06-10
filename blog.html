@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale='1.0'">
+        <title>University Website Design</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,500&display=swap" rel="stylesheet">
+        <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/scss/btn-effect.css">
+        <script src="assets/js/jquery-1.9.1.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="assets/images/logo.png" /></a>
+                <div class="nav-links" id="nav_links">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="sub-header-content">
+                <h1>Our Certificate & Online Programs For 2022</h1>
+            </div>
+        </section>
+
+        <!------------------------ Blog page content ------------------------>
+        <section class="blog-content">
+            <div class="blog-left zoom">
+                <img src="assets/images/certificate.jpg" />
+                <h2>Our Certificate & Online Programs For 2022</h2>
+                <p>Lorem ipsum dola sit amet, consectetur adipicing elit.
+                    Pellentesque aliquet turpis nulla, eleifend faucibus est sollictudin ut venenatis ex, et dapibus purus.
+                    Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendsse condimentum vestibulum ex ac cursus.</p>
+                <br/>
+                <p>WordPress est un logiciel conçu pour tout le monde, mettant l'accent sur l'accessibilité, les performances,
+                    la sécurité et la facilité d'utilisation. Nous pensons qu'un bon logiciel doit fonctionner avec une configuration minimale,
+                    afin que vous puissiez vous concentrer sur le partage libre de votre histoire, de vos produits ou de vos services.
+                    Le logiciel WordPress de base est simple et prévisible, vous pouvez donc facilement démarrer.
+                    Il offre également des fonctionnalités puissantes pour la croissance et le succès.
+                    Nous croyons en la démocratisation de l'édition et des libertés qui accompagnent l'open source.
+                    Cette idée est soutenue par une grande communauté de personnes qui collaborent et contribuent à ce projet.
+                    La communauté WordPress est accueillante et inclusive. La passion de nos contributeurs est le moteur du succès de WordPress qui,
+                    à son tour, vous aide à atteindre vos objectifs.</p>
+                <br/>
+                <p>Lorem ipsum dola sit amet, consectetur adipicing elit.
+                    Pellentesque aliquet turpis nulla, eleifend faucibus est sollictudin ut venenatis ex, et dapibus purus.
+                    Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendsse condimentum vestibulum ex ac cursus.
+                    Lorem ipsum dola sit amet, consectetur adipicing elit.
+                    Pellentesque aliquet turpis nulla, eleifend faucibus est sollictudin ut venenatis ex, et dapibus purus.
+                    Donec sit amet nisl non justo malesuada fermentum. Donec eget felis dolor. Suspendsse condimentum vestibulum ex ac cursus.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" title="" placeholder="Enter Name...">
+                        <input type="email" title="" placeholder="Enter Email...">
+                        <textarea rows="5" placeholder="Your comment..."></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div class="category">
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div class="category">
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div class="category">
+                    <span>Machine Learning</span>
+                    <span>20</span>
+                </div>
+                <div class="category">
+                    <span>Computer Science</span>
+                    <span>25</span>
+                </div>
+                <div class="category">
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+                <div class="category">
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div class="category">
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ Footer ------------------------>
+        <section class="footer">
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dola sit amet, consectetur adipicing elit.
+                Pellentesque aliquet turpis nulla, eleifend faucibus est <br /> sollictudin ut venenatis ex, et dapibus purus.</p>
+            <div class="icons">
+                <i class="fa fa-facebook large-icon"></i>
+                <i class="fa fa-twitter large-icon"></i>
+                <i class="fa fa-instagram large-icon"></i>
+                <i class="fa fa-linkedin large-icon"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o large-icon"></i> by Dai Cntt</p>
+            <a id="scroll_top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+        </section>
+
+        <!------------------------ JS toggle menu `---`--------------------->
+
+        <script>
+            var navLinks = document.getElementById('nav_links');
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

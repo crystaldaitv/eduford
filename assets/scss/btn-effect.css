@@ -1,0 +1,30 @@
+.hero-btn-fill {
+  font-weight: 100;
+}
+.hero-btn-fill svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero-btn-fill rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.hero-btn-fill:hover {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.hero-btn-fill:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/*# sourceMappingURL=btn-effect.css.map */
